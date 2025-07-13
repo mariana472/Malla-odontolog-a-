@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Odontología UCC</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f2f2f2;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .semestre {
+      background: white;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    .semestre-header {
+      padding: 15px;
+      background: #0097a7;
+      color: white;
+      cursor: pointer;
+      border-radius: 8px 8px 0 0;
+      font-weight: bold;
+    }
+    .materias {
+      display: none;
+      padding: 15px;
+      background: #e0f7fa;
+    }
+    .materia {
+      margin: 6px 0;
+      padding: 10px;
+      background: #b2ebf2;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .materia:hover {
+      background: #80deea;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Malla Curricular Odontología - UCC (Semestres 1 a 5)</h1>
+
+<!-- SEMESTRE 1 -->
+<div class="semestre">
+  <div class="semestre-header" onclick="toggle(1)">Semestre 1</div>
+  <div class="materias" id="s1">
+    <div class="materia" onclick="alert('Abre Humanidades II')">Humanidades I</div>
+    <div class="materia" onclick="alert('Abre Inmunología')">Biología Celular y Molecular</div>
+    <div class="materia" onclick="alert('Abre Imagenología y ATM y Oclusión')">Morfología Dental</div>
+    <div class="materia" onclick="alert('Abre Inglés II')">Inglés I</div>
+    <div class="materia" onclick="alert('Abre Histoembriología → Imagenología y ATM/Oclusión')">Morfofisiología General y Estomatognático</div>
+    <div class="materia" onclick="alert('Abre Farmacocinética en 3er semestre')">Procesos Bioquímicos</div>
+  </div>
+</div>
+
+<!-- SEMESTRE 2 -->
+<div class="semestre">
+  <div class="semestre-header" onclick="toggle(2)">Semestre 2</div>
+  <div class="materias" id="s2">
+    <div class="materia" onclick="alert('Continuación de Humanidades I')">Humanidades II</div>
+    <div class="materia" onclick="alert('Abre Inglés III')">Inglés II</div>
+    <div class="materia" onclick="alert('Abre Farmacoterapia Odontológica')">Microbiología</div>
+    <div class="materia" onclick="alert('Abre Patología Oral, Bases Quirúrgicas y Semiología')">Inmunología</div>
+    <div class="materia" onclick="alert('Abre Promoción y Prevención en 4° semestre')">Propiedades de Materiales Dentales</div>
+    <div class="materia" onclick="alert('Núcleo de Salud Pública')">Elementos de Salud Pública</div>
+    <div class="materia" onclick="alert('Abre Odontología del Niño y Adolescente')">Histoembriología</div>
+  </div>
+</div>
+
+<!-- SEMESTRE 3 -->
+<div class="semestre">
+  <div class="semestre-header" onclick="toggle(3)">Semestre 3</div>
+  <div class="materias" id="s3">
+    <div class="materia" onclick="alert('Asignatura complementaria')">Electiva I</div>
+    <div class="materia" onclick="alert('Abre Patología Oral, Bases Quirúrgicas, Semiología y Farmacoterapia Odontológica')">Farmacocinética</div>
+    <div class="materia" onclick="alert('Abre Patología Oral y Bases Quirúrgicas')">Imagenología Odontológica</div>
+    <div class="materia" onclick="alert('Continúa desde Inglés II')">Inglés III</div>
+    <div class="materia" onclick="alert('Abre Operatoria Dental')">ATM y Oclusión</div>
+    <div class="materia" onclick="alert('Asignatura general')">Seguridad y Salud en el Trabajo</div>
+  </div>
+</div>
+
+<!-- SEMESTRE 4 -->
+<div class="semestre">
+  <div class="semestre-header" onclick="toggle(4)">Semestre 4</div>
+  <div class="materias" id="s4">
+    <div class="materia" onclick="alert('Abre Inglés V')">Inglés IV</div>
+    <div class="materia" onclick="alert('Asignatura electiva')">Optativa I</div>
+    <div class="materia" onclick="alert('Abre Diagnóstico y Terapéutica Periodontal')">Patología Oral y Bases Quirúrgicas</div>
+    <div class="materia" onclick="alert('Abre Operatoria Dental y Promoción y Prevención')">Cariología</div>
+    <div class="materia" onclick="alert('Abre Odontología del Niño y Adolescente')">Semiología y Patología General</div>
+    <div class="materia" onclick="alert('Abre Diagnóstico y Terapéutica Periodontal')">Farmacoterapia Odontológica</div>
+  </div>
+</div>
+
+<!-- SEMESTRE 5 -->
+<div class="semestre">
+  <div class="semestre-header" onclick="toggle(5)">Semestre 5</div>
+  <div class="materias" id="s5">
+    <div class="materia" onclick="alert('Último nivel de inglés')">Inglés V</div>
+    <div class="materia" onclick="alert('Requiere Cariología y Propiedades de Materiales')">Promoción y Prevención</div>
+    <div class="materia" onclick="alert('Requiere Patología Oral y Farmacoterapia')">Diagnóstico y Terapéutica Periodontal</div>
+    <div class="materia" onclick="alert('Requiere ATM, Cariología')">Operatoria Dental</div>
+    <div class="materia" onclick="alert('Parte clínica de Endodoncia')">Preclínica de Endodoncia</div>
+    <div class="materia" onclick="alert('Requiere Histoembriología y Semiología')">Odontología del Niño y Adolescente</div>
+  </div>
+</div>
+
+<script>
+  function toggle(num) {
+    const materias = document.getElementById('s' + num);
+    materias.style.display = (materias.style.display === 'block') ? 'none' : 'block';
+  }
+</script>
+
+</body>
+  </html>
